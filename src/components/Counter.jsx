@@ -8,18 +8,18 @@ const Counter = () => {
   const startRef = useRef(0);
   const intervalRef = useRef(null);
 
-  // START
+
   const start = () => {
     setRunning(true);
     startRef.current = Date.now() - time;
   };
 
-  // STOP
+
   const stop = () => {
     setRunning(false);
   };
 
-  // RESET
+ 
   const reset = () => {
     setRunning(false);
     setTime(0);
@@ -35,7 +35,7 @@ const Counter = () => {
     return () => clearInterval(intervalRef.current);
   }, [running]);
 
-  // FORMAT TIME
+
   const formatTime = () => {
     const minutes = String(Math.floor((time / 1000 / 60) % 60)).padStart(2, "0");
     const seconds = String(Math.floor((time / 1000) % 60)).padStart(2, "0");

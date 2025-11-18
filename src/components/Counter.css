@@ -2,71 +2,71 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #1f1f1f; 
+  background: #1a1124; 
   margin: 0;
   padding: 0;
   height: 100vh;
-  font-family: "Poppins", sans-serif;
+ 
 }
+
 
 .stopwatch {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: rgba(255, 255, 255, 0.06);
-  padding: 40px;
-  border-radius: 999px;   
-  border-radius: 50px;  
-  backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.08);
+  padding: 45px;
+  border-radius: 30px;  
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
 }
 
 
-/* Display Time */
 .display {
   font-size: 5rem;
   font-family: monospace;
   font-weight: bold;
-  color: #ffffff;                  
+  color: #f5e1ff; 
   margin-bottom: 30px;
   letter-spacing: 3px;
-  text-shadow: 0 0 10px rgba(255,255,255,0.3);
+   
 }
 
-/* Buttons */
+
 .controls button {
   font-size: 1.4rem;
   font-weight: bold;
-  padding: 12px 25px;
+  padding: 12px 28px;
   margin: 8px;
   border: none;
-  border-radius: 12px;           
+  border-radius: 15px;
   cursor: pointer;
   color: #ffffff;
   transition: 0.3s ease;
+  box-shadow: 0 0 12px rgba(175, 70, 255, 0.4);
 }
 
 
 .start-button {
-  background: #28a745;
+  background: linear-gradient(135deg, #9b4dff, #7f37e9);
 }
 .start-button:hover {
-  background: #208638;
+  background: linear-gradient(135deg, #b266ff, #9250f0);
 }
 
 
 .stop-button {
-  background: #dc3545;
+  background: linear-gradient(135deg, #ff4ed4, #d63bb3);
 }
 .stop-button:hover {
-  background: #b52d3a;
+  background: linear-gradient(135deg, #ff6fdf, #e14ac3);
 }
 
 
 .reset-button {
-  background: #0d6efd;
+  background: linear-gradient(135deg, #6f00ff, #a44bff);
 }
 .reset-button:hover {
-  background: #0b5ed7;
+  background: linear-gradient(135deg, #8b2cff, #b06aff);
 }
