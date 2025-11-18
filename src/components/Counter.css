@@ -1,0 +1,72 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1f1f1f; 
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+.stopwatch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.06);
+  padding: 40px;
+  border-radius: 999px;   
+  border-radius: 50px;  
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Display Time */
+.display {
+  font-size: 5rem;
+  font-family: monospace;
+  font-weight: bold;
+  color: #ffffff;                  
+  margin-bottom: 30px;
+  letter-spacing: 3px;
+  text-shadow: 0 0 10px rgba(255,255,255,0.3);
+}
+
+/* Buttons */
+.controls button {
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding: 12px 25px;
+  margin: 8px;
+  border: none;
+  border-radius: 12px;           
+  cursor: pointer;
+  color: #ffffff;
+  transition: 0.3s ease;
+}
+
+
+.start-button {
+  background: #28a745;
+}
+.start-button:hover {
+  background: #208638;
+}
+
+
+.stop-button {
+  background: #dc3545;
+}
+.stop-button:hover {
+  background: #b52d3a;
+}
+
+
+.reset-button {
+  background: #0d6efd;
+}
+.reset-button:hover {
+  background: #0b5ed7;
+}
